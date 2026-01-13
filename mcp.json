@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "rest-api": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-everything@latest"
+      ],
+      "env": {
+        "BASE_URL": "https://dummy-json.mock.beeceptor.com/",
+        "API_KEY": "your-api-key-here"
+      }
+    }
+  }
+}
